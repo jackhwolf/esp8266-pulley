@@ -2,3 +2,4 @@ tcpconn/
 tcpconn/*
 venv
 .env
+**/__pycache__/**
