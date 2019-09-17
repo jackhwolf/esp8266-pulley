@@ -1,4 +1,4 @@
-# Client, server, and arduino code to control a DC </br>
+# Client, server, and arduino code to control a DC
 # motor connected to an esp8266 board
 
 ### client/
