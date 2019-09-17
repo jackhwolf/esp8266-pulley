@@ -7,11 +7,11 @@
 * defines API to communicate b/t web and board
 * serves HMTL/CSS
 
-### server
+### server/
 * handles user authentification and authorization
 * defines connection to and operations on motor
 
-### sketches
+### sketches/
 * testing echo server for esp8266
 * DC motor and API setup for esp8266
 * DC motor setup on mega2560
