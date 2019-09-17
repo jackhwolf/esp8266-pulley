@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+  <title> {{ title_txt }}</title>
+   <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- give a nice dark theme & align links in center of box -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/request-response.css') }}">
+</head>
+
+<html>
+  <body>
+    <div id="resultcontainer" class="container" >
+      <div class="jumbotron">
+        <h1 class="display-4">{{ main_txt }}</h1>
+        <p class="lead">{{ sub_txt }}</p>
+          <ul id="selectiongroup" class="list-group">
+          {% for l in links %}
+            <li class="list-group-item list-group-item-dark">
+              <!-- I want big buttons w/ a colored background -->
+              <a class="btn btn-primary btn-lg"
+                 href="{{ l[0] }}"
+                 role="button">
+                  <h2>{{ l[1] }}</h2>
+               </a>
+            </li>
+          {% endfor %}
+          </ul>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+  <title> Select destination </title>
+   <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- give a nice dark theme & align links in center of box -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/select-dest-style.css') }}">
+</head>
+
+<html>
+  <body>
+    <!-- box to contain destination selections -->
+      <div id="selectioncontainer" class="container" align="center">
+        <div class="jumbotron">
+          <h1>Select destination</h2>
+          <!-- hold all links in list -->
+          <ul id="selectiongroup" class="list-group">
+            <li class="list-group-item list-group-item-dark">
+              <!-- I want big buttons w/ a colored background -->
+              <a class="btn btn-primary btn-lg"
+                 href="/sendit/1"
+                 role="button">
+                  <h2>UP</h2>
+               </a>
+            </li>
+            <li class="list-group-item list-group-item-dark">
+              <a class="btn btn-primary btn-lg"
+                 href="/sendit/0"
+                 role="button">
+                  <h2>DOWN</h2>
+               </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
